@@ -1,5 +1,5 @@
 let arr = [1, 2, 3, 1, 2, 4, 5, 5]
-// Bài 1:
+// Bài 1: Em không hiểu đề
 // Bài 2 :
 let str = 'Playwright';
 let newArr = [];
@@ -11,19 +11,19 @@ for (let char of newStr) {
     newArr.push(char);
 }
 console.log(newArr);
-// Bài 3:
-// for (let i = 0; i < arr.length-1; i++) {
-//     count =0;
-//     for (let j = 1; j < arr.length; j++) {
-//         if (arr[i] === arr[j]) {
-//            count++;
-//         }
-//     }
-//     if (count === 1) {
-//         newArr.push(arr[i]);
-//     }
-// }
-// console.log(newArr);
+// Bài 3: 
+for (let item of arr) {
+    count = 0;
+    for (let i = arr.length; i >= 0; i--) {
+        if (item === arr[i]) {
+            count++;
+        }
+    }
+    if (count === 1) {
+        newArr.push(item);
+    }
+}
+console.log(newArr);
 
 
 
