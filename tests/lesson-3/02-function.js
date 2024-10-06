@@ -1,15 +1,13 @@
 // Bai 1:
 function caculator(weight, height) {
-    BMI = (weight / (height * height))
+    const BMI = (weight / (height * height))
+    
     if (BMI < 18.5) {
         return 'Thiếu cân';
-
     } else if (BMI < 25) {
         return 'Bình thường';
-
     } else if (BMI < 30) {
         return 'Thừa cân';
-
     } else {
         return 'Béo phì';
     }
@@ -100,7 +98,7 @@ function caculatorScore(arr) {
     for (let i in arr) {
         sum += arr[i].score;
     }
-    return sum / (arr.length + 1);
+    return sum / arr.length ;
 }
 console.log(caculatorScore(student));
 // Bài 7:
