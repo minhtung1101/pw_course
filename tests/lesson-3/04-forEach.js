@@ -4,9 +4,10 @@ let sum = 0;
 fibonacci.forEach(element => {
     console.log(element);
 });
+// fibonacci.forEach(element => console.log(element););
 // Bài 2:
 let min = fibonacci[0];
-let max= fibonacci[0];
+let max = fibonacci[0];
 fibonacci.forEach(element => {
     sum += element;
     if (min > element) {

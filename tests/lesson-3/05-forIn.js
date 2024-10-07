@@ -26,6 +26,22 @@ for (let item in student) {
 for (let item in student) {
     console.log(student[item].salary + student[item].age);
 }
+// cách 2
+let sum=0;
+for (const key in student) {
+    if (key == "salary" || key == "age") {
+        sum += student[key];
+    }
+}
+for (const key in student) {
+    if(typeof student[key] == "number"){
+}
+}
+ console.log("=====");
+ console.log(sum);
+
+
+
 // Bài 3:
 let arr = [];
 for (let item in student) {
