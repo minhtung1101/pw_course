@@ -2,7 +2,7 @@ let departurePlanet = 'Trái Đất';
 let mission = 'Khám phá Vũ trụ K10';
 let crew = ['Shu', 'Chau tu', 'Ngoc Quynh', 'Phong Do', 'Hanh Ngan', 'Khai Trong Do', 'Minh Thu', 'Minh Trang Bui', 'Nau Da', 'Nga Quynh'];
 function launchShip(crew) {
-    let mess = `🚀 Chuẩn bị khởi động! Phi hành đoàn gồm: ${crew} sẽ đồng hành cùng bạn trong chuyến phiêu lưu khám phá Vũ trụ K10! (ﾉ◕ヮ◕)ﾉ*:･ﾟ✧`;
+    let mess = `🚀 Chuẩn bị khởi động! Phi hành đoàn gồm: ${crew} sẽ đồng hành cùng bạn trong chuyến phiêu lưu ${mission}! (ﾉ◕ヮ◕)ﾉ*:･ﾟ✧🚀`;
     return mess;
 }
 console.log(launchShip(crew));
@@ -29,6 +29,6 @@ function decryptCode(code) {
 }
 console.log(decryptCode('K10 Challenge'));
 function returnToEarth() {
-    console.log('🚀 Chuẩn bị trở về Trái Đất! ( ・ω・)');
+    console.log(`🚀 Chuẩn bị trở về ${departurePlanet}! ( ・ω・)🚀`);
 }
 returnToEarth();
